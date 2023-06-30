@@ -1,0 +1,61 @@
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 10px 30px 5px black !important;
+    
+}
+.navbartest{
+    box-shadow: 0px 3px 5px rgb(236, 235, 235);
+}
+.OpenButton, .Sidebar{
+    display: none;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 30px;
+    
+}
+a{
+    color: inherit;
+}
+li {
+    margin: 0px 15px;
+    color: #2d2e32;
+}
+
+.logo{
+    display: flex;
+    max-width: 200px;
+    margin-left: 30px;
+    
+}
+#BootstrapNavbar{
+    display: none;
+    
+}
+
+
+@media only screen and (max-width: 672px){
+    .Navbar{
+    
+    display: none;
+    
+    }
+    .OpenButton{
+        display: flex;
+    }
+    #BootstrapNavbar{
+        display: flex;
+    }
+    
+}
+
+

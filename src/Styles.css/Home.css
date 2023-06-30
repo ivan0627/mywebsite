@@ -1,0 +1,84 @@
+
+.home-container{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0% 7%;
+    flex-wrap: wrap-reverse;
+}
+
+.home-text{
+    font-family: 'Poppins-500', sans-serif;
+    font-size: 2.9em;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    padding-top: 5%;
+    margin-right: 50px;
+    flex: 0 1 auto;
+    
+}
+.home-text p{
+    font-size: 1.3rem;
+    letter-spacing: 0.2px;
+    padding-top: 50px;
+    letter-spacing: 0.5px;
+    color: rgb(58, 58, 58);
+}
+
+.profile-photo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}   
+.profile-photo{
+    max-width: 300px;
+    max-height: 300px;
+   
+}
+.stacks{
+    min-height: 100px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.stacks li{
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 1;
+}
+.stacks h2{
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.stacksdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    padding: 0;
+}
+.stacks img {
+   width: 50px;
+height: 50px;
+}
+
+@media only screen and (max-width: 985px) { 
+    .home-text{
+        text-align: center;  
+        margin-right: 0px;
+    }
+
+}
+
