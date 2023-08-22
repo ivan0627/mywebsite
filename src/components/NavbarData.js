@@ -2,15 +2,15 @@ import React from "react"
 
 export const SidebarData = [
     { title: "Home",
-     link: "/home"
+     link: "Home"
     },
     { title: "About",
-     link: "/about"
+     link: "About",
     },
     { title: "Projects",
-     link: "/Projects"
+     link: "Projects"
     },
     { title: "Contact",
-     link: "/Contact"
+     link: "Contact"
     }
  ];

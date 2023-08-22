@@ -10,8 +10,8 @@ import nodejs_logo from "../images/nodejs-logo.svg"
 
 function Home (){
     return (
-        <div>
-            <div className='home-container'>
+        <div id="Home">
+            <div className='home-container' >
 
                 <div className='home-text'>
                     <h1>Front-End React Developer 💻</h1>

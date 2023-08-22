@@ -1,0 +1,25 @@
+.contactme-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    min-height: 400px;
+}
+.contactme-container form{
+    max-width: 500px;
+   
+}
+
+.contactme-container label{
+    font-size: 15px;    
+    margin-right: 20px;
+}
+.contactme-container input{
+    margin: 20px;
+    width: 300px;
+    height: 25px;
+}

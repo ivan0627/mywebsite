@@ -5,7 +5,7 @@ import computer_image from '../images/computer_image.png'
 function About (){
     return(
 
-        <div className='about_container'>
+        <div className='about_container' id="About">
             <div className='computer_image_container'>
             <img src={computer_image} className='computer_image'></img>
             </div>

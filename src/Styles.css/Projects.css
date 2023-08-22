@@ -1,0 +1,47 @@
+
+.Projects{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+    
+}
+
+.projects_images {
+    display: flex;
+    flex-shrink: 1
+    
+}
+ 
+#githubLogo{
+    max-width: 300px;
+    flex-shrink: 1
+    
+}
+.project_description {
+    text-align: justify ;
+    font-size: 15px;
+    line-height: 20pt;
+    max-width: 40%;
+    min-width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.project_description h3{
+    overflow: hidden;
+
+}
+#githubLink{
+    font-size: 20px;
+    flex-shrink: 1;
+
+}
+@media only screen and (max-width: 649px){
+    .project_description{
+        min-width: 60%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

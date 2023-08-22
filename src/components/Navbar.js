@@ -14,6 +14,12 @@ function Navbar () {
         document.getElementById('OpenButton').style.display ="";
     }
     
+    function handleClickScroll(location){
+        const element = document.getElementById(`${location}`)
+        if(element){
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
 
     return(
     <div className='navbartest'>
@@ -24,12 +30,16 @@ function Navbar () {
                     
                     <ul>
                         {SidebarData.map((val, key) =>{
+                              
                             return (
-                                <li key={key}  onClick={()=> {window.location.pathname = val.link}}>
-                                    
+                                
+                                <li key={key}  onClick={ () => handleClickScroll(val.title)}>
+                                                                      
                                     <div>{val.title}</div>
                                 </li>
+                                
                             )
+                            
                         })}
                     </ul>
                     
@@ -43,10 +53,10 @@ function Navbar () {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link disabled">Contact</a>
+                    <a class="nav-link active" aria-current="page" onClick={ () => handleClickScroll("Home")}>Home</a>
+                    <a class="nav-link" onClick={ () => handleClickScroll("About")} >About</a>
+                    <a class="nav-link" onClick={ () => handleClickScroll("Projects")}>Projects</a>
+                    <a class="nav-link disabled"onClick={ () => handleClickScroll("Contact")}>Contact</a>
                 </div>
                 </div>
             </div>
@@ -61,5 +71,6 @@ function Navbar () {
                     
    </div>)
 }
+
 
 export default Navbar
